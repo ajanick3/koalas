@@ -3,8 +3,6 @@ import HeaderText from '../components/HeaderText'
 import BodyText from '../components/BodyText'
 import ListComponent from '../components/ListComponent'
 
-const headerText = `Scientific Names & Classification`
-
 const text1 = `Primary species is Phascolarctos cinereus -Pascolarctidae comes from the
 Greek translation of phascolos (bear) and arctos (pouch). 
 -Sub species:`
@@ -20,7 +18,8 @@ These marsupials typically breed during the late spring and early
 summer, a period during which females experience estrus multiple times
 until they find mates.`
 
-const Name = () => {
+const Name = (props) => {
+  const { headerText } = props
   return (
     <div>
       <HeaderText content={headerText} />

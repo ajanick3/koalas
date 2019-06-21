@@ -2,11 +2,10 @@ import React from 'react'
 import HeaderText from '../components/HeaderText'
 import BodyText from '../components/BodyText'
 
-const headerText = `Koala Habitat`
-
 const text1 = `Koalas live in Southeastern & Eastern Australia.  To thrive in their habitat, Koalas need eucalyptus Trees, adequate rainfall, other Koalas.  They live in the eucalyptus forest and woodlands.  They spend most of their time wedged between forks in the branches.`
 
-const Habitat = () => {
+const Habitat = (props) => {
+  const { headerText } = props
   return (
     <div>
       <HeaderText content={headerText} />

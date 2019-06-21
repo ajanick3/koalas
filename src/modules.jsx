@@ -17,54 +17,93 @@ import DeviceHubIcon from '@material-ui/icons/DeviceHub'
 import NatureIcon from '@material-ui/icons/Nature'
 import ToysIcon from '@material-ui/icons/Toys'
 
-
 export const modules = [
   {
-    key: 'Home',
+    key: 'home',
     title: 'Home',
-    component: <HomePage />,
+    component: (
+      <HomePage
+        // components
+        headerText={`Koalas for Kids`}
+      />
+    ),
     icon: <PetsIcon />,
   },
   {
-    key: 'ImageGallery',
+    key: 'imagegallery',
     title: 'Image Gallery',
-    component: <ImageGallery />,
+    component: (
+      <ImageGallery
+        // components
+        headerText={`Image Gallery`}
+      />
+    ),
     icon: <CollectionsIcon />,
   },
   {
-    key: 'DietInformation',
+    key: 'dietinformation',
     title: 'Diet Information',
-    component: <DietInformation />,
+    component: (
+      <DietInformation
+        // components
+        headerText={`Diet Information`}
+      />
+    ),
     icon: <FastFoodIcon />,
   },
   {
-    key: 'MatingAndReporoduction',
+    key: 'matingandreporoduction',
     title: 'Mating & Reproduction',
-    component: <MatingAndReporoduction />,
+    component: (
+      <MatingAndReporoduction
+        // components
+        headerText={`Mating & Reproduction`}
+      />
+    ),
     icon: <AutorenewIcon />,
   },
   {
-    key: 'Habitat',
-    title: 'Koala Habitat',
-    component: <Habitat />,
+    key: 'habitat',
+    title: 'Habitat',
+    component: (
+      <Habitat
+        // components
+        headerText={`Koala Habitat`}
+      />
+    ),
     icon: <NatureIcon />,
   },
   {
-    key: 'Name',
+    key: 'name',
     title: 'Name & Classification',
-    component: <Name />,
+    component: (
+      <Name
+        // components
+        headerText={`Scientific Names & Classification`}
+      />
+    ),
     icon: <ClassIcon />,
   },
   {
-    key: 'AnatomyAndBiology',
+    key: 'anatomyandbiology',
     title: 'Anatomy & Biology',
-    component: <AnatomyAndBiology />,
+    component: (
+      <AnatomyAndBiology
+        // components
+        headerText={`Anatomy & Biology`}
+      />
+    ),
     icon: <DeviceHubIcon />,
   },
   {
-    key: 'AnimalBehavior',
+    key: 'animalbehavior',
     title: 'Behavior',
-    component: <AnimalBehavior />,
+    component: (
+      <AnimalBehavior
+        // components
+        headerText={`Koala Behavior`}
+      />
+    ),
     icon: <ToysIcon />,
   },
 ]

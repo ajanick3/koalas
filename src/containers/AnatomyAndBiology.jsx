@@ -3,8 +3,6 @@ import HeaderText from '../components/HeaderText'
 import BodyText from '../components/BodyText'
 import ListComponent from '../components/ListComponent'
 
-const headerText = `Anatomy & Biology`
-
 const text1 = `
 Koalas have special physical characteristics that complement their
 tree-dwelling lifestyle. With two opposable digits, their forepaws are
@@ -18,7 +16,8 @@ const list1 = [
   `Koala’s live about 13-18 years`,
 ]
 
-const AnatomyAndBiology = () => {
+const AnatomyAndBiology = (props) => {
+  const { headerText } = props
   return (
     <div>
       <HeaderText content={headerText} />

@@ -18,7 +18,6 @@ import {
 import { makeStyles } from '@material-ui/core/styles'
 import MenuIcon from '@material-ui/icons/Menu'
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
-
 import { modules } from './modules'
 
 const drawerWidth = 280
@@ -84,54 +83,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-// const links = [
-//   {
-//     key: 'Home',
-//     title: 'Home',
-//     icon: <PetsIcon />,
-//   },
-//   {
-//     key: 'ImageGallery',
-//     title: 'Image Gallery',
-//     icon: <CollectionsIcon />,
-//   },
-//   {
-//     key: 'DietInformation',
-//     title: 'Diet Information',
-//     icon: <FastFoodIcon />,
-//   },
-//   {
-//     key: 'MatingAndReporoduction',
-//     title: 'Mating & Reproduction',
-//     icon: <AutorenewIcon />,
-//   },
-//   {
-//     key: 'Habitat',
-//     title: 'Koala Habitat',
-//     icon: <NatureIcon />,
-//   },
-//   {
-//     key: 'Name',
-//     title: 'Name & Classification',
-//     icon: <ClassIcon />,
-//   },
-//   {
-//     key: 'AnatomyAndBiology',
-//     title: 'Anatomy & Biology',
-//     icon: <DeviceHubIcon />,
-//   },
-//   {
-//     key: 'AnimalBehavior',
-//     title: 'Behavior',
-//     icon: <ToysIcon />,
-//   },
-// ]
-
 export default function Dashboard() {
   const classes = useStyles()
-  // const theme = useTheme()
   const [open, setOpen] = React.useState(true)
-  const [pageOpen, setPageOpen] = React.useState('HomePage')
+  const [pageOpen, setPageOpen] = React.useState(modules[0].key)
 
   return (
     <div className={classes.root}>
@@ -155,7 +110,7 @@ export default function Dashboard() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Koalas
+            Koalas for Kids
           </Typography>
         </Toolbar>
       </AppBar>

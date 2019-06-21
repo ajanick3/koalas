@@ -15,10 +15,11 @@ const list1 = [
   `Although these beautiful creatures are protected by law, and not classed as an endangered species, their habitat is under threat. Sadly, around 80% of koala habitat has been lost to human homes, drought and forest fires.`,
 ]
 
-const HomePage = () => {
+const HomePage = (props) => {
+  const { headerText } = props
   return (
     <div>
-      <HeaderText content={`Koalas for Kids`} />
+      <HeaderText content={headerText} />
       <ListComponent items={list1} />
     </div>
   )

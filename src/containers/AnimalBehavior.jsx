@@ -2,7 +2,6 @@ import React from 'react'
 import HeaderText from '../components/HeaderText'
 import BodyText from '../components/BodyText'
 
-const headerText = `Koala Behavior`
 const text1 = `Nocturnal mammals, koalas sleep for up to 16 hours a day. They are
 arboreal, which means that they live in trees. They do not live in big
 groups but rather prefer to be alone.`
@@ -23,10 +22,10 @@ through exposure to an infected animal's urine. In koalas, the effects
 of chlamydia are devastating, including blindness, infertility and an
 infection known as 'dirty tail'.`
 
-const AnimalBehavior = () => {
+const AnimalBehavior = (props) => {
+  const { headerText } = props
   return (
     <div>
-      {/* <Typography variant="h2">Animal Behavior</Typography> */}
       <HeaderText content={headerText} />
       <BodyText content={text1} />
       <BodyText content={text2} />
