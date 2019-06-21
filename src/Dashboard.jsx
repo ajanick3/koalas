@@ -113,7 +113,10 @@ export default function Dashboard() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Koalas for Kids
+            <span>
+              Koalas for Kids -{' '}
+              {modules.filter((m) => m.key === pageOpen).map((m) => m.title)}
+            </span>
           </Typography>
         </Toolbar>
       </AppBar>
@@ -142,7 +145,12 @@ export default function Dashboard() {
         <Divider />
         <List>
           {modules.map(({ key, title, icon }, index) => (
-            <ListItem button key={title} onClick={() => setPageOpen(key)}>
+            <ListItem
+              button
+              key={title}
+              onClick={() => setPageOpen(key)}
+              selected={pageOpen === key}
+            >
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={title} />
             </ListItem>
