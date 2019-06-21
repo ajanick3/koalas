@@ -23,7 +23,7 @@ const Name = (props) => {
   const { headerText } = props
   return (
     <div>
-      <HeaderText content={headerText} />
+      {/* <HeaderText content={headerText} /> */}
       <img src={koalaImg} style={{ width: '100%' }} />
       <BodyText content={text1} />
       <ListComponent items={list1} />

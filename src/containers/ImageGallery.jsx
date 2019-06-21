@@ -25,7 +25,7 @@ const ImageGallery = (props) => {
   const { headerText } = props
   return (
     <div>
-      <HeaderText content={headerText} />
+      {/* <HeaderText content={headerText} /> */}
       <ImageGridList images={images} />
     </div>
   )

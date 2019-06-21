@@ -9,7 +9,7 @@ const Diet = (props) => {
   const { headerText } = props
   return (
     <div>
-      <HeaderText content={headerText} />
+      {/* <HeaderText content={headerText} /> */}
       <img src={image06} style={{ width: '100%' }} />
       <BodyText content={text1} />
     </div>

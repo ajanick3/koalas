@@ -27,7 +27,7 @@ const Behavior = (props) => {
   const { headerText } = props
   return (
     <div>
-      <HeaderText content={headerText} />
+      {/* <HeaderText content={headerText} /> */}
       {/* <img src={koalaImg} style={{ width: '100%' }} /> */}
       <iframe
         width="100%"

@@ -9,7 +9,7 @@ const Habitat = (props) => {
   const { headerText } = props
   return (
     <div>
-      <HeaderText content={headerText} />
+      {/* <HeaderText content={headerText} /> */}
       <img src={img} style={{ width: '100%' }} />
       <BodyText content={text1} />
       {/* <Typography variant="caption">Where on Earth are they found?</Typography>
