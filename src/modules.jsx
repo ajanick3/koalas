@@ -1,12 +1,12 @@
 import React from 'react'
 import HomePage from './containers/HomePage'
 import ImageGallery from './containers/ImageGallery'
-import DietInformation from './containers/DietInformation'
-import MatingAndReporoduction from './containers/MatingAndReporoduction'
+import Diet from './containers/Diet'
+import Mating from './containers/Mating'
 import Habitat from './containers/Habitat'
 import Name from './containers/Name'
 import AnatomyAndBiology from './containers/AnatomyAndBiology'
-import AnimalBehavior from './containers/AnimalBehavior'
+import Behavior from './containers/Behavior'
 
 import PetsIcon from '@material-ui/icons/Pets'
 import CollectionsIcon from '@material-ui/icons/Collections'
@@ -44,7 +44,7 @@ export const modules = [
     key: 'dietinformation',
     title: 'Diet Information',
     component: (
-      <DietInformation
+      <Diet
         // components
         headerText={`Diet Information`}
       />
@@ -55,7 +55,7 @@ export const modules = [
     key: 'matingandreporoduction',
     title: 'Mating & Reproduction',
     component: (
-      <MatingAndReporoduction
+      <Mating
         // components
         headerText={`Mating & Reproduction`}
       />
@@ -99,7 +99,7 @@ export const modules = [
     key: 'animalbehavior',
     title: 'Behavior',
     component: (
-      <AnimalBehavior
+      <Behavior
         // components
         headerText={`Koala Behavior`}
       />

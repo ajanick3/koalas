@@ -22,7 +22,7 @@ through exposure to an infected animal's urine. In koalas, the effects
 of chlamydia are devastating, including blindness, infertility and an
 infection known as 'dirty tail'.`
 
-const AnimalBehavior = (props) => {
+const Behavior = (props) => {
   const { headerText } = props
   return (
     <div>
@@ -38,4 +38,4 @@ const AnimalBehavior = (props) => {
   )
 }
 
-export default AnimalBehavior
+export default Behavior
