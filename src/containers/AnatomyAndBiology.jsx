@@ -2,6 +2,7 @@ import React from 'react'
 import HeaderText from '../components/HeaderText'
 import BodyText from '../components/BodyText'
 import ListComponent from '../components/ListComponent'
+import koalaImg from '../assets/95b83f18ad1e76629e85e3b063bda2fa.jpg'
 
 const text1 = `
 Koalas have special physical characteristics that complement their
@@ -21,6 +22,7 @@ const AnatomyAndBiology = (props) => {
   return (
     <div>
       <HeaderText content={headerText} />
+      <img src={koalaImg} style={{ width: '100%' }} />
       <BodyText content={text1} />
       <ListComponent items={list1} />
     </div>

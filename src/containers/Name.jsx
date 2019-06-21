@@ -2,6 +2,7 @@ import React from 'react'
 import HeaderText from '../components/HeaderText'
 import BodyText from '../components/BodyText'
 import ListComponent from '../components/ListComponent'
+import koalaImg from '../assets/koalas.jpg'
 
 const text1 = `Primary species is Phascolarctos cinereus -Pascolarctidae comes from the
 Greek translation of phascolos (bear) and arctos (pouch). 
@@ -23,6 +24,7 @@ const Name = (props) => {
   return (
     <div>
       <HeaderText content={headerText} />
+      <img src={koalaImg} style={{ width: '100%' }} />
       <BodyText content={text1} />
       <ListComponent items={list1} />
       <BodyText content={text2} />

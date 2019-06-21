@@ -1,6 +1,7 @@
 import React from 'react'
 import HeaderText from '../components/HeaderText'
 import BodyText from '../components/BodyText'
+import img from '../assets/koala-map.PNG'
 
 const text1 = `Koalas live in Southeastern & Eastern Australia.  To thrive in their habitat, Koalas need eucalyptus Trees, adequate rainfall, other Koalas.  They live in the eucalyptus forest and woodlands.  They spend most of their time wedged between forks in the branches.`
 
@@ -9,6 +10,7 @@ const Habitat = (props) => {
   return (
     <div>
       <HeaderText content={headerText} />
+      <img src={img} style={{ width: '100%' }} />
       <BodyText content={text1} />
       {/* <Typography variant="caption">Where on Earth are they found?</Typography>
       <Typography variant="body1">Southeastern & Eastern Australia</Typography>

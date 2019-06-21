@@ -1,4 +1,5 @@
 import React from 'react'
+import image06 from '../assets/pexels-photo-1192374.jpeg'
 import HeaderText from '../components/HeaderText'
 import BodyText from '../components/BodyText'
 
@@ -9,6 +10,7 @@ const Diet = (props) => {
   return (
     <div>
       <HeaderText content={headerText} />
+      <img src={image06} style={{ width: '100%' }} />
       <BodyText content={text1} />
     </div>
   )

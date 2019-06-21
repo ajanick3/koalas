@@ -1,6 +1,7 @@
 import React from 'react'
 import HeaderText from '../components/HeaderText'
 import BodyText from '../components/BodyText'
+import koalaImg from '../assets/MISTY210117kdp10long1600-1080x675.jpg'
 
 const text1 = `Nocturnal mammals, koalas sleep for up to 16 hours a day. They are
 arboreal, which means that they live in trees. They do not live in big
@@ -27,6 +28,17 @@ const Behavior = (props) => {
   return (
     <div>
       <HeaderText content={headerText} />
+      {/* <img src={koalaImg} style={{ width: '100%' }} /> */}
+      <iframe
+        width="100%"
+        height="500"
+        // width="560"
+        // height="315"
+        src="https://www.youtube.com/embed/oI3ADcDH0Uc"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      />
       <BodyText content={text1} />
       <BodyText content={text2} />
       <BodyText content={text3} />

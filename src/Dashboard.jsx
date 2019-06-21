@@ -81,6 +81,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     padding: theme.spacing(3),
   },
+  background: {
+    backgroundColor: '#00e676',
+  },
 }))
 
 export default function Dashboard() {
@@ -121,10 +124,13 @@ export default function Dashboard() {
           [classes.drawerClose]: !open,
         })}
         classes={{
-          paper: clsx({
-            [classes.drawerOpen]: open,
-            [classes.drawerClose]: !open,
-          }),
+          paper: clsx(
+            {
+              [classes.drawerOpen]: open,
+              [classes.drawerClose]: !open,
+            },
+            classes.background
+          ),
         }}
         open={open}
       >
