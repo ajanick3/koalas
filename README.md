@@ -1,21 +1,10 @@
-# Create React App example
+# Koala web app using ReactJS with material-ui
 
-## How to use
+I created this app during our Scrum training course. I have since completed the assessment and have a certification as a _Professional Scrum Master I_!
 
-Download the example [or clone the repo](https://github.com/mui-org/material-ui):
-
-```sh
-curl https://codeload.github.com/mui-org/material-ui/tar.gz/master | tar -xz --strip=2 material-ui-master/examples/create-react-app
-cd create-react-app
-```
-
-Install it and run:
+If anyone has any interest in viewing this whimsical demo, you may clone it and run:
 
 ```sh
 npm install
 npm start
 ```
-
-## The idea behind the example
-
-This example demonstrates how you can use [Create React App](https://github.com/facebookincubator/create-react-app).

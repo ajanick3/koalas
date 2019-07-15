@@ -50,3 +50,51 @@ You're about to initialize a Firebase project in this directory:
     at TLSSocket._finishInit (_tls_wrap.js:633:8)
 [error] 
 [error] Error: Server Error. unable to get local issuer certificate
+[debug] [2019-06-21T18:57:30.622Z] ----------------------------------------------------------------------
+[debug] [2019-06-21T18:57:30.625Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\njaja\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2019-06-21T18:57:30.625Z] CLI Version:   7.0.1
+[debug] [2019-06-21T18:57:30.625Z] Platform:      win32
+[debug] [2019-06-21T18:57:30.625Z] Node Version:  v10.15.2
+[debug] [2019-06-21T18:57:30.626Z] Time:          Fri Jun 21 2019 14:57:30 GMT-0400 (Eastern Daylight Time)
+[debug] [2019-06-21T18:57:30.626Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-21T18:57:30.636Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-21T18:57:30.636Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\njaja\nick\koala
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2019-06-21T18:57:49.814Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?page_size=100  
+ 
+[debug] [2019-06-21T18:57:50.286Z] <<< HTTP RESPONSE 200
+[info] i  Using project midmark-koalas (midmark-koalas)
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2019-06-21T18:57:59.575Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2019-06-21T18:57:59.754Z] Error: unable to get local issuer certificate
+    at TLSSocket.onConnectSecure (_tls_wrap.js:1051:34)
+    at TLSSocket.emit (events.js:189:13)
+    at TLSSocket.EventEmitter.emit (domain.js:441:20)
+    at TLSSocket._finishInit (_tls_wrap.js:633:8)
+[error] 
+[error] Error: Server Error. unable to get local issuer certificate
